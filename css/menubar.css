@@ -1,0 +1,89 @@
+.nav {
+	margin:auto;
+  height:30px;
+  border-radius:10px;
+  width:1060px
+}
+
+.menu-container {
+	margin: 0 auto;
+	height:30px;
+  width:920px;
+}
+
+.memu {
+	list-style: none;
+	padding: 0;
+}
+
+.memu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: -9999px;
+	margin-left: 20px;
+	width: 105px;
+	
+	-moz-box-shadow: 3px 2px 3px #333;
+	-webkit-box-shadow: 3px 2px 3px #333;
+	box-shadow: 3px 2px 3px #333;
+}
+.memu ul ul {
+	margin-left: 0px;
+	margin-top: 0px;
+	
+}
+.memu a {
+	border: 1px solid #f7f7f7;
+	background-color:#777777;
+	color: #FFF;
+	display: block;
+	font: bold 12px/25px segoe ui,verdana,sans-serif;
+	margin: 0 -1px -1px 0;
+	padding-left: 15px;
+	text-decoration: none;
+	width: 100px;
+	text-overflow: ellipsis;
+}
+
+.memu .memu-icon {
+	position: relative;
+	width: 16px; 
+	height: 16px; 
+	margin: 4px 10px 0px 0px;
+	float: left;
+}
+
+.memu li.memu-root > a {
+	border-left: 0 !important;
+	border-right: 0 !important;
+	border-top: 1px solid transparent !important;
+	border-bottom: 1px solid transparent !important;
+	background: transparent !important;
+}
+
+.memu li {
+  width:105px;
+  margin: 0 auto;
+  float:left;
+}
+
+.memu li:hover {
+	position: relative;
+	z-index: 100;
+}
+
+.memu li:hover > ul {
+	left: -20px;
+	opacity: 1;
+	top: 26px;
+	z-index: -1;
+}
+
+.memu li:hover li:hover > ul {
+	left: 150px;
+	opacity: 1;
+	top: 0px;
+	z-index: 100;
+}

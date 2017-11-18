@@ -1,0 +1,105 @@
+/*Strip the ul of padding and list styling*/
+.nav {
+	margin: 0 auto;
+	height:30px;
+  max-width:940px;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+li a {
+	display:block;
+	min-width:140px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+li:hover a {
+	background: #9d9d9d;
+}
+
+li:hover ul a {
+	background: #f3f3f3;
+	color: #777777;
+	height: 30px;
+	line-height: 30px;
+}
+
+li:hover ul a:hover {
+	background: #9d9d9d;
+	color: #fff;
+}
+
+li ul {
+	display: none;
+}
+
+li ul li {
+	display: block;
+	float: none;
+}
+
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+.show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #9d9d9d;
+	text-align: center;
+	padding: 0;
+	display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+@media screen and (max-width : 1039px){
+	ul {
+		position: static;
+		display: none;
+	}
+	li {
+		margin-bottom: 1px;
+		margin-left: 15px;
+	}
+	ul li, li a {
+		text-align: left;
+		width: 100%;
+	}
+	.show-menu {
+		display:block;
+	}
+
+	.shown-menu, label {
+		margin: 0;
+	}
+}

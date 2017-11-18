@@ -1,0 +1,61 @@
+body, div, h1, form, fieldset, input, textarea {
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: none;
+}
+
+h2 {
+	padding: 1em;
+}
+
+body {
+	font-family: tahoma;
+}
+
+#contact {
+	width: 30em; 
+	margin: 0em auto; 
+	padding: 1em;
+	background: #9d9d9d;
+}
+
+#login {
+	width: 30em; 
+	margin: 0em auto; 
+	padding: 1em;
+	background: #9d9d9d;
+}
+
+#contact label {
+	float: left; 
+	clear: left; 
+	margin: 11px 20px 0 0; 
+	width: 95px;
+	text-align: right; 
+}
+
+input {
+	width: 260px; 
+	height: 35px; 
+	padding: 5px 20px 0px 20px; 
+	margin: 0 0 20px 0;
+	background:#777777;	
+}
+
+textarea {
+	width: 260px; 
+	height: 170px; 
+	padding: 12px 20px 0px 20px; 
+	margin: 0 0 20px 0;
+	background:#777777;	
+}
+
+input[type=submit] {
+	width: 85px; 
+	height: 40px; 
+	float: right; 
+	padding: 10px 15px; 
+	margin: 0 15px 0 0;
+	cursor: pointer;
+}
